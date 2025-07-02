@@ -15,7 +15,7 @@ public class Main {
             // catch (InterruptedException e) {
             //      Thread.currentThread().interrupt();
             // }
-            // notify();
+             notify();  // wake-up one thread from suspended list , it does not mean it will access CS, it just mean it can try again for CS
         }
         
         public synchronized void down() {
